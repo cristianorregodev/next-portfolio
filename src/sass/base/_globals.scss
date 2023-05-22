@@ -1,0 +1,156 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+//       *::selection {
+//         background-color: $firstColor;
+//         color: $textWhite;
+//       }
+
+body {
+    font-family: $font;
+    font-size: 1.6rem;
+    margin: 0;
+
+    &.fijar-body {
+        overflow: hidden;
+    }
+}
+.dark {
+    background: $dark;
+    .background {
+        background: $dark;
+    }
+    .text {
+        color: $white;
+    }
+    .btn-primary {
+        background: $primary-color;
+        color: $white;
+        border: solid 2px $primary-color;
+        transition: all 0.4s ease;
+        &:hover {
+            background: $dark;
+        }
+    }
+    .btn-secondary {
+        border: solid 2px $primary-color;
+        background: $dark;
+        color: $white;
+        transition: all 0.4s ease;
+        &:hover {
+            background: $primary-color;
+        }
+    }
+}
+.light {
+    background: $light;
+    .background {
+        background: $light;
+    }
+    .text {
+        color: $dark;
+    }
+    .btn-primary {
+        background: $dark;
+        color: $white;
+        border: solid 2px $dark;
+        transition: all 0.4s ease;
+        &:hover {
+            background: $primary-color;
+        }
+    }
+    .btn-secondary {
+        border: solid 2px $dark;
+        color: $white;
+        background: $primary-color;
+        transition: all 0.4s ease;
+        &:hover {
+            background: $dark;
+        }
+    }
+}
+.btn {
+    padding: 1rem 2rem;
+    border: none;
+    background: none;
+    border-radius: 1.2rem;
+    filter: drop-shadow(2px 2px 2px $primary-color);
+    font-family: $font;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+p {
+    font-size: 1.4rem;
+    font-weight: 100;
+    text-align: justify;
+    color: gray;
+    margin: 1rem 0 1.5rem 0;
+}
+
+.container {
+    max-width: 120rem;
+    width: 95%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    color: white;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 3.5rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 0;
+    margin: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 10px white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: black;
+}

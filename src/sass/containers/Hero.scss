@@ -1,0 +1,49 @@
+section.Hero-container {
+    width: 100%;
+    height: calc(100vh - 6rem);
+    text-align: center;
+    overflow: hidden;
+    @include tablet-alt {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+        gap: 5rem;
+        text-align: left;
+        overflow: visible;
+        overflow-y: hidden;
+    }
+    div.Hero-content {
+        h1 {
+            font-size: 4rem;
+            margin-top: 3rem;
+        }
+        span {
+            font-size: 2rem;
+        }
+        p {
+            font-size: 1.8rem;
+            margin: 3rem 0;
+            @include tablet-alt {
+                text-align: left;
+            }
+        }
+        .Hero-buttons {
+            display: flex;
+            justify-content: center;
+            @include tablet-alt {
+                justify-content: flex-start;
+            }
+            column-gap: 20px;
+        }
+    }
+    div.Hero-image {
+        position: relative;
+        max-width: 50rem;
+        width: 100%;
+        max-height: 60rem;
+        height: 100%;
+        img {
+            filter: drop-shadow(2px 2px 10px $primary-color) saturate(1.5);
+        }
+    }
+}

@@ -1,0 +1,14 @@
+//Font
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap');
+// Globals
+@import 'base/normalize';
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/globals';
+
+//Components
+@import 'components/Navbar';
+
+//Containers
+@import 'containers/Hero';
+@import 'containers/About';
