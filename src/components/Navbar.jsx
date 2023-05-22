@@ -14,7 +14,7 @@ export const Navbar = () => {
         navRef.current.classList.toggle('responsive_nav')
     }
     return (
-        <header className="navbar background">
+        <header className={`'navbar background' ${theme ? 'dark' : 'light'}`}>
             <Link href="/" className="logo">
                 <h2 className="text">
                     co<span>dev</span>
