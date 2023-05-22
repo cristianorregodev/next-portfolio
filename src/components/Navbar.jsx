@@ -1,5 +1,7 @@
 'use client'
+import Link from 'next/link'
 import React, { useRef } from 'react'
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 
 export const Navbar = () => {
     const navRef = useRef()
@@ -9,31 +11,33 @@ export const Navbar = () => {
     }
     return (
         <header className="navbar background">
-            <a href="/" className="logo">
-                <h2 className="text">cristianorregodev</h2>
-            </a>
+            <Link href="/" className="logo">
+                <h2 className="text">
+                    co<span>dev</span>
+                </h2>
+            </Link>
 
             <nav ref={navRef} className="background">
-                <a href="/#about" onClick={showNavBar} className="text">
+                <Link href="/#about" onClick={showNavBar} className="text">
                     Sobre mí
-                </a>
-                <a href="/welcome" onClick={showNavBar} className="text">
+                </Link>
+                <Link href="/projects" onClick={showNavBar} className="text">
                     Proyectos
-                </a>
-                <a href="/text-generator" onClick={showNavBar} className="text">
+                </Link>
+                <Link href="/articles" onClick={showNavBar} className="text">
                     Artículos
-                </a>
+                </Link>
                 <a href="/image-generator" onClick={showNavBar} className="text">
                     Contacto
                 </a>
 
                 <button className="nav_close_btn text" onClick={showNavBar}>
-                    X
+                    <AiOutlineClose />
                 </button>
             </nav>
 
             <button className="nav_open_btn text" onClick={showNavBar}>
-                O
+                <AiOutlineMenu />
             </button>
         </header>
     )

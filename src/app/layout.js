@@ -6,7 +6,7 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
-    const dark = true
+    const dark = false
     return (
         <html lang="en">
             <body className={dark ? 'dark' : 'light'}>
