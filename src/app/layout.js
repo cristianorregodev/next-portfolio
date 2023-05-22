@@ -1,5 +1,4 @@
 'use client'
-import { useContext } from 'react'
 import useTheme from '@/hooks/useTheme'
 import { GlobalContext } from '@/context'
 import { Navbar } from '@/components/Navbar'
