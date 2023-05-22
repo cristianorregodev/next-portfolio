@@ -1,3 +1,7 @@
+'use client'
+import { useContext } from 'react'
+import useTheme from '@/hooks/useTheme'
+import { GlobalContext } from '@/context'
 import { Navbar } from '@/components/Navbar'
 
 export const metadata = {
@@ -6,12 +10,15 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
-    const dark = false
+    const [theme, toggleTheme] = useTheme()
+
     return (
         <html lang="en">
-            <body className={dark ? 'dark' : 'light'}>
-                <Navbar />
-                {children}
+            <body className={theme ? 'dark' : 'light'}>
+                <GlobalContext.Provider value={{ theme, toggleTheme }}>
+                    <Navbar />
+                    {children}
+                </GlobalContext.Provider>
             </body>
         </html>
     )
