@@ -1,7 +1,6 @@
 section.About-container {
     padding: 4rem 0;
     @include tablet-alt {
-        height: calc(100vh - 6rem);
         padding: 6rem 0;
     }
 
@@ -9,6 +8,7 @@ section.About-container {
         color: $primary-color;
         font-size: 2rem;
         text-transform: uppercase;
+        text-align: center;
     }
     .About-content {
         margin-top: 4rem;

@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 export default function Hero() {
@@ -12,8 +13,12 @@ export default function Hero() {
                     proyectos o leas mi blog.
                 </p>
                 <div className="Hero-buttons">
-                    <button className="btn btn-primary">Proyectos</button>
-                    <button className="btn btn-secondary">Artículos</button>
+                    <Link href={'/projects'} className="btn btn-primary">
+                        Proyectos
+                    </Link>
+                    <Link href={'/articles'} className="btn btn-secondary">
+                        Artículos
+                    </Link>
                 </div>
             </div>
             <div className="Hero-image">

@@ -13,24 +13,25 @@ export const About = () => {
                     </h1>
                     <ul className="text">
                         <li>
-                            Inicié en el mundo del desarrollo web hace 5 años, realizando algunos
-                            cursos virtuales mientras me formaba como ingeniero en sistemas.
+                            Inicié en el desarrollo web hace 5 años, realizando algunos cursos
+                            virtuales mientras me formaba como ingeniero en sistemas.
                         </li>
                         <li>
-                            Luego de un tiempo y crear algunos proyectos personales, publiqué mi
-                            primera página web para producción y desde entonces comprendí todo lo
-                            que podía hacer.
+                            Luego de más de 1 año y crear algunos proyectos personales, publiqué el
+                            primer sitio web para un cliene en producción, saber que otras personas
+                            harían uso de algo hecho por mí fue una gran motivación.
                         </li>
                         <li>
                             Después de 2 años de continuo aprendizaje conseguí mi primer trabajo
-                            como desarrollador, donde además de mantener un sitio web pequeño,
-                            también impartía clases de programación básica y diseño web.
+                            como desarrollador en una institución educativa, donde además de diseñar
+                            y desarrollar el sitio web institucional, impartí clases de programación
+                            básica y diseño web.
                         </li>
                         <li>
-                            Cuando estás inmerso en la tecnología te das cuenta que nunca paras de
-                            aprender, gracias a ello y mi curiosidad por descubirir cosas nuevas,
-                            aprendí nuevas tecnologías las cuales me permitieron construir
-                            aplicaciones de gran escala.
+                            Con la tecnología te das cuenta que nunca paras de aprender, gracias a
+                            ello y mi curiosidad por descubirir, aprendí nuevas tecnologías las
+                            cuales me permitieron construir aplicaciones web completas y obener un
+                            nuevo cargo en el área de tecnología de una empresa a nivel nacional.
                         </li>
                         <li>
                             Actualmente soy desarrollador Full Stack con más de 3 años de

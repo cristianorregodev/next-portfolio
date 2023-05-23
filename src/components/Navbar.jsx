@@ -51,7 +51,7 @@ export const Navbar = () => {
                                 paddingRight: 2,
                             }}
                         >
-                            <BiSun />
+                            <BiMoon />
                         </div>
                     }
                     checkedIcon={
@@ -66,7 +66,7 @@ export const Navbar = () => {
                                 paddingRight: 2,
                             }}
                         >
-                            <BiMoon />
+                            <BiSun />
                         </div>
                     }
                     uncheckedHandleIcon={
@@ -79,7 +79,7 @@ export const Navbar = () => {
                                 fontSize: 20,
                             }}
                         >
-                            <BiMoon />
+                            <BiSun />
                         </div>
                     }
                     checkedHandleIcon={
@@ -93,7 +93,7 @@ export const Navbar = () => {
                                 fontSize: 18,
                             }}
                         >
-                            <BiSun />
+                            <BiMoon />
                         </div>
                     }
                 />

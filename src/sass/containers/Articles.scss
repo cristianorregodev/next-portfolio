@@ -1,0 +1,22 @@
+section.Articles-container {
+    padding: 4rem 0;
+    @include tablet-alt {
+        padding: 6rem 0;
+    }
+    h2 {
+        color: $primary-color;
+        font-size: 2rem;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .Articles-cards-container {
+        width: 100%;
+        display: grid;
+        place-content: center;
+        gap: 2rem;
+        @include tablet-alt {
+            margin-top: 4rem;
+            min-height: 80%;
+        }
+    }
+}

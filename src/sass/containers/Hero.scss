@@ -41,8 +41,5 @@ section.Hero-container {
         width: 100%;
         max-height: 56rem;
         height: 100%;
-        img {
-            filter: drop-shadow(0 5px 16px $primary-color) saturate(1.5);
-        }
     }
 }

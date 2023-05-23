@@ -8,7 +8,11 @@
 
 //Components
 @import 'components/Navbar';
+@import 'components/ProjectCard';
+@import 'components/ArticleCard';
 
 //Containers
 @import 'containers/Hero';
 @import 'containers/About';
+@import 'containers/Projects';
+@import 'containers/Articles';
