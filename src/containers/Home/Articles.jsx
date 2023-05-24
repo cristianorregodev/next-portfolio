@@ -9,6 +9,9 @@ export const Articles = () => {
                 <ArticleCard />
                 <ArticleCard />
                 <ArticleCard />
+                <ArticleCard />
+                <ArticleCard />
+                <ArticleCard />
             </div>
         </section>
     )

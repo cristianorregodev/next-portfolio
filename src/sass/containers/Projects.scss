@@ -30,9 +30,7 @@ section.Projects-container {
         color: $primary-color;
         font-weight: bold;
         transition: all 1s ease;
-        &:hover {
-            color: $gray;
-        }
+
         margin-top: 3rem;
         @include tablet-alt {
             margin-top: 5rem;

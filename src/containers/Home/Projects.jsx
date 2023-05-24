@@ -16,7 +16,7 @@ export const Projects = () => {
                 <ProjectCard />
                 <ProjectCard />
             </div>
-            <a href="#">
+            <a href="#" className="hover">
                 Todos los proyectos <BiArrowToRight />
             </a>
         </section>

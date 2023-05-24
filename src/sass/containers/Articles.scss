@@ -14,9 +14,10 @@ section.Articles-container {
         display: grid;
         place-content: center;
         gap: 2rem;
+        margin-top: 4rem;
         @include tablet-alt {
-            margin-top: 4rem;
             min-height: 80%;
+            grid-template-columns: repeat(2, 1fr);
         }
     }
 }

@@ -12,6 +12,7 @@ export default function Hero() {
                     Bienvenido a mi sitio web, te invito a que conozcas un poco sobre mí, veas mis
                     proyectos o leas mi blog.
                 </p>
+
                 <div className="Hero-buttons">
                     <Link href={'/projects'} className="btn btn-primary">
                         Proyectos
