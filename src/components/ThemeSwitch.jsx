@@ -23,9 +23,9 @@ export const ThemeSwitch = () => {
     // useEffect only runs on the client, so now we can safely show the UI
     useEffect(() => {
         setMounted(true)
-        if (currentTheme === 'dark') {
-            setChecked(true)
-        }
+        // if (currentTheme === 'dark') {
+        //     setChecked(true)
+        // }
     }, [])
 
     if (!mounted) {
@@ -33,73 +33,73 @@ export const ThemeSwitch = () => {
     }
 
     return (
-        <Switch
-            onChange={handleThemeChange}
-            checked={checked}
-            offColor="#494646"
-            onColor="#007D99"
-            uncheckedIcon={
-                <div
-                    style={{
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                        height: '100%',
-                        fontSize: 15,
-                        color: 'white',
-                        paddingRight: 2,
-                    }}
-                >
-                    <BiMoon />
-                </div>
-            }
-            checkedIcon={
-                <div
-                    style={{
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                        height: '100%',
-                        fontSize: 15,
-                        color: 'white',
-                        paddingRight: 2,
-                    }}
-                >
-                    <BiSun />
-                </div>
-            }
-            uncheckedHandleIcon={
-                <div
-                    style={{
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                        height: '100%',
-                        fontSize: 20,
-                    }}
-                >
-                    <BiSun />
-                </div>
-            }
-            checkedHandleIcon={
-                <div
-                    style={{
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                        height: '100%',
-                        color: '#007D99',
-                        fontSize: 18,
-                    }}
-                >
-                    <BiMoon />
-                </div>
-            }
-        />
-        // <select value={theme} onChange={(e) => setTheme(e.target.value)}>
-        //     <option value="system">System</option>
-        //     <option value="dark">Dark</option>
-        //     <option value="light">Light</option>
-        // </select>
+        // <Switch
+        //     onChange={handleThemeChange}
+        //     checked={checked}
+        //     offColor="#494646"
+        //     onColor="#007D99"
+        //     uncheckedIcon={
+        //         <div
+        //             style={{
+        //                 display: 'flex',
+        //                 justifyContent: 'center',
+        //                 alignItems: 'center',
+        //                 height: '100%',
+        //                 fontSize: 15,
+        //                 color: 'white',
+        //                 paddingRight: 2,
+        //             }}
+        //         >
+        //             <BiMoon />
+        //         </div>
+        //     }
+        //     checkedIcon={
+        //         <div
+        //             style={{
+        //                 display: 'flex',
+        //                 justifyContent: 'center',
+        //                 alignItems: 'center',
+        //                 height: '100%',
+        //                 fontSize: 15,
+        //                 color: 'white',
+        //                 paddingRight: 2,
+        //             }}
+        //         >
+        //             <BiSun />
+        //         </div>
+        //     }
+        //     uncheckedHandleIcon={
+        //         <div
+        //             style={{
+        //                 display: 'flex',
+        //                 justifyContent: 'center',
+        //                 alignItems: 'center',
+        //                 height: '100%',
+        //                 fontSize: 20,
+        //             }}
+        //         >
+        //             <BiSun />
+        //         </div>
+        //     }
+        //     checkedHandleIcon={
+        //         <div
+        //             style={{
+        //                 display: 'flex',
+        //                 justifyContent: 'center',
+        //                 alignItems: 'center',
+        //                 height: '100%',
+        //                 color: '#007D99',
+        //                 fontSize: 18,
+        //             }}
+        //         >
+        //             <BiMoon />
+        //         </div>
+        //     }
+        // />
+        <select value={theme} onChange={(e) => setTheme(e.target.value)}>
+            <option value="system">System</option>
+            <option value="dark">Dark</option>
+            <option value="light">Light</option>
+        </select>
     )
 }
