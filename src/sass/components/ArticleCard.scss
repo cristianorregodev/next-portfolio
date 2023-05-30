@@ -6,9 +6,9 @@ a.Article-card {
     transition: all 0.5s ease;
 
     .Article-card-content {
-        padding: 1rem 2rem 2rem;
+        padding: 2rem 2rem;
         display: grid;
-
+        gap: 0.8rem;
         .Article-caegory {
             margin-bottom: 0.4rem;
 
@@ -21,16 +21,18 @@ a.Article-card {
             }
         }
         h1 {
-            font-size: 2rem;
+            font-size: 1.8rem;
+            font-weight: 600;
         }
         h4 {
             font-weight: 400;
-            font-size: 1.6rem;
-            line-height: 2.4rem;
             text-align: justify;
             margin: 0;
             @include tablet-alt {
                 width: 90%;
+            }
+            p {
+                font-size: 1.6rem;
             }
         }
         div.Article-author {

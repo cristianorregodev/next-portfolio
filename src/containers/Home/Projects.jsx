@@ -1,7 +1,11 @@
 import { BiArrowToRight } from 'react-icons/bi'
 import { ProjectCard } from '@/components/ProjectCard'
+import { API_URL } from '@/config'
+import { getData } from '@/helpers/getData'
 
-export const Projects = () => {
+export const Projects = async () => {
+    const { data } = await getData(`${API_URL}/projects`)
+    const projects = data.slice(0, 3)
     return (
         <section className="Projects-container container">
             <h2>Proyectos</h2>
@@ -12,9 +16,9 @@ export const Projects = () => {
                 digitales. ¡Explora, inspira y crea con mis proyectos de software!
             </p>
             <div className="Projects-cards-container">
-                <ProjectCard />
-                <ProjectCard />
-                <ProjectCard />
+                {projects.map((project) => (
+                    <ProjectCard key={project.id} project={project} />
+                ))}
             </div>
             <a href="#" className="hover">
                 Todos los proyectos <BiArrowToRight />

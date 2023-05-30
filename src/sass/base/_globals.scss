@@ -65,6 +65,12 @@ body {
             color: $white;
         }
     }
+    .dangerously-html-text {
+        p {
+            color: $white;
+            margin: 0;
+        }
+    }
 }
 .light {
     background: $light;
@@ -107,6 +113,12 @@ body {
             color: $dark;
         }
     }
+    .dangerously-html-text {
+        p {
+            color: $dark;
+            margin: 0;
+        }
+    }
 }
 .btn {
     padding: 1rem 2rem;
@@ -131,7 +143,24 @@ p {
     width: 95%;
     margin: 0 auto;
 }
-
+.ellipsis-3-lines {
+    p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+}
+.ellipsis-2-lines {
+    p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+}
 a {
     text-decoration: none;
 }

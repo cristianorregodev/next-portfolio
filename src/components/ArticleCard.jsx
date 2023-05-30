@@ -1,19 +1,20 @@
 import React from 'react'
 
-export const ArticleCard = () => {
+export const ArticleCard = ({ article }) => {
     return (
         <a href="#" className="Article-card box-shadow">
             <div className="Article-card-content">
                 <div className="Article-caegory">
-                    <span className="text">Categoty name</span>
+                    <span className="text">{article.category}</span>
                 </div>
-                <h1 className="text">Lorem ipsum dolor sit.</h1>
-                <h4 className="text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, eveniet!
-                </h4>
+                <h1 className="text">{article.title}</h1>
+                <h4
+                    className="dangerously-html-text ellipsis-2-lines"
+                    dangerouslySetInnerHTML={{ __html: article.abstract }}
+                ></h4>
                 <div className="Article-author">
-                    <span>02-12-2022</span>
-                    <span>Cristian Orrego</span>
+                    <span>{article.date}</span>
+                    <span>By {article.author}</span>
                 </div>
             </div>
         </a>

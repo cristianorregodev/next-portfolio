@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import { Stack } from '../../helpers/prueba'
+import { Stack } from '../../helpers/stack-data'
 
 export default function Hero() {
     return (
