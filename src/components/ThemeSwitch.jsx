@@ -7,7 +7,7 @@ import Switch from 'react-switch'
 export const ThemeSwitch = () => {
     const [mounted, setMounted] = useState(false)
     const [checked, setChecked] = useState(false)
-    const { theme, setTheme } = useTheme()
+    const { theme, setTheme, systemTheme } = useTheme()
 
     const handleThemeChange = () => {
         if (theme === 'light') {
@@ -19,10 +19,11 @@ export const ThemeSwitch = () => {
             setChecked(!checked)
         }
     }
+    const currentTheme = theme === 'system' ? systemTheme : theme
     // useEffect only runs on the client, so now we can safely show the UI
     useEffect(() => {
         setMounted(true)
-        if (theme === 'dark') {
+        if (currentTheme === 'dark') {
             setChecked(true)
         }
     }, [])
@@ -95,5 +96,10 @@ export const ThemeSwitch = () => {
                 </div>
             }
         />
+        // <select value={theme} onChange={(e) => setTheme(e.target.value)}>
+        //     <option value="system">System</option>
+        //     <option value="dark">Dark</option>
+        //     <option value="light">Light</option>
+        // </select>
     )
 }
