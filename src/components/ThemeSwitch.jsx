@@ -1,7 +1,7 @@
 'use client'
 import { useState, useEffect } from 'react'
 import { useTheme } from 'next-themes'
-import { BiMoon, BiSun } from 'react-icons/bi'
+import { IoMdMoon, IoMdSunny } from 'react-icons/io'
 import Switch from 'react-switch'
 
 export const ThemeSwitch = () => {
@@ -96,10 +96,17 @@ export const ThemeSwitch = () => {
         //         </div>
         //     }
         // />
-        <select value={theme} onChange={(e) => setTheme(e.target.value)}>
-            <option value="system">System</option>
-            <option value="dark">Dark</option>
-            <option value="light">Light</option>
-        </select>
+        <>
+            {/* <select value={theme} onChange={(e) => setTheme(e.target.value)}>
+                <option value="system">System</option>
+                <option value="dark">Dark</option>
+                <option value="light">Light</option>
+            </select> */}
+            {currentTheme === 'dark' ? (
+                <IoMdSunny size={24} className="Sun-icon" onClick={() => setTheme('light')} />
+            ) : (
+                <IoMdMoon size={24} className="Moon-icon" onClick={() => setTheme('dark')} />
+            )}
+        </>
     )
 }
