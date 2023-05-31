@@ -1,11 +1,12 @@
 import Image from 'next/image'
+import { BASE_API_URL } from '@/config'
 
 export const ProjectCard = ({ project }) => {
     console.log(project)
     return (
         <article className="Project-card background box-shadow">
             <div className="Project-card-image">
-                <Image src={project.cover} fill={true} alt={project.title} />
+                <Image src={BASE_API_URL + project.cover} fill={true} alt={project.title} />
             </div>
             <div className="card-content">
                 <h1 className="text">{project.title}</h1>
