@@ -1,8 +1,9 @@
+import Link from 'next/link'
 import React from 'react'
 
 export const ArticleCard = ({ article }) => {
     return (
-        <a href="#" className="Article-card box-shadow">
+        <Link href={`/articles/${article.slug}`} className="Article-card box-shadow">
             <div className="Article-card-content">
                 <div className="Article-caegory">
                     <span className="text">{article.category}</span>
@@ -17,6 +18,6 @@ export const ArticleCard = ({ article }) => {
                     <span>By {article.author}</span>
                 </div>
             </div>
-        </a>
+        </Link>
     )
 }

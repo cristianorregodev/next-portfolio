@@ -68,10 +68,10 @@ section.Hero-container {
     div.Hero-image {
         position: relative;
         margin: 0 auto;
-        width: 30rem;
+        width: 26rem;
         height: 30rem;
         @include tablet {
-            width: 50rem;
+            width: 46rem;
             height: 56rem;
         }
     }

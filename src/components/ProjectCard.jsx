@@ -2,7 +2,6 @@ import Image from 'next/image'
 import { BASE_API_URL } from '@/config'
 
 export const ProjectCard = ({ project }) => {
-    console.log(project)
     return (
         <article className="Project-card background box-shadow">
             <div className="Project-card-image">

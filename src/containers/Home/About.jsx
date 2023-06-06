@@ -13,30 +13,25 @@ export const About = () => {
                     </h1>
                     <ul className="text">
                         <li>
-                            Inicié en el desarrollo web hace 5 años, realizando algunos cursos
-                            virtuales mientras me formaba como ingeniero en sistemas.
+                            2022 - Presente: Nuevo rol como desarrollador Full Stack, aportando
+                            ideas y soluciones en empresa del sector financiero e inmobiliario
+                            mejorando procesos internos y la interacción con el usuario final.
                         </li>
                         <li>
-                            Luego de más de 1 año y crear algunos proyectos personales, publiqué el
-                            primer sitio web para un cliene en producción, saber que otras personas
-                            harían uso de algo hecho por mí fue una gran motivación.
+                            2020 - 2021: Web master en institución del sector educativo donde además
+                            de administrar el sitio web institucional, dí clases de programación y
+                            desarrollo web.
                         </li>
                         <li>
-                            Después de 2 años de continuo aprendizaje conseguí mi primer trabajo
-                            como desarrollador en una institución educativa, donde además de diseñar
-                            y desarrollar el sitio web institucional, impartí clases de programación
-                            básica y diseño web.
+                            2020: Primer proyecto web para producción, mejorando la presencia en
+                            internet de un colegio local desarrollando un sitio web institucional
+                            informativo.
                         </li>
                         <li>
-                            Con la tecnología te das cuenta que nunca paras de aprender, gracias a
-                            ello y mi curiosidad por descubirir, aprendí nuevas tecnologías las
-                            cuales me permitieron construir aplicaciones web completas y obener un
-                            nuevo cargo en el área de tecnología de una empresa a nivel nacional.
-                        </li>
-                        <li>
-                            Actualmente soy desarrollador Full Stack con más de 3 años de
-                            experiencia, pero sé que el camino es largo y aún tengo mucho por
-                            aprender, por hacer.
+                            2018 - 2019: Primeros pasos en el desarrollo web aprendiendo en mis
+                            clases de ingeniería y de forma autodidacta con cursos virtuales, donde
+                            creé algunos proyectos personales los cuáles me abrieron las puertas al
+                            mundo laboral dentro de la insdustria TI.
                         </li>
                     </ul>
                 </article>
