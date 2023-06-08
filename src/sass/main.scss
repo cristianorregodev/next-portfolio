@@ -11,9 +11,15 @@
 @import 'components/ProjectCard';
 @import 'components/ArticleCard';
 @import 'components/Banner';
+@import 'components/PostItem';
+
+//Placeholders
+@import 'components/placeholders/PostItemPlaceHolder';
 
 //Containers
 @import 'containers/Hero';
 @import 'containers/About';
 @import 'containers/Projects';
 @import 'containers/Articles';
+@import 'containers/Articles/Banner';
+@import 'containers/Articles/ListOfPosts';

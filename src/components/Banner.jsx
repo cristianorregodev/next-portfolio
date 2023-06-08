@@ -1,3 +1,5 @@
+import { AiOutlineTag, AiOutlineUser, AiOutlineCalendar } from 'react-icons/ai'
+
 export const Banner = ({
     title = 'Lorem ipsum noe truwen am',
     author = 'Cristian Orrego',
@@ -10,13 +12,13 @@ export const Banner = ({
                 <h1>{title}</h1>
                 <ul>
                     <li>
-                        <span>Author:</span> {author}
+                        <AiOutlineUser /> {author}
                     </li>
                     <li>
-                        <span>Categoría:</span> {category}
+                        <AiOutlineTag /> {category}
                     </li>
                     <li>
-                        <span>Publicado:</span> {date}
+                        <AiOutlineCalendar /> {date}
                     </li>
                 </ul>
             </div>

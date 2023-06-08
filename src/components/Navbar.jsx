@@ -30,7 +30,7 @@ export const Navbar = () => {
                 <Link href="/articles" onClick={showNavBar} className="text">
                     Artículos
                 </Link>
-                <a href="/image-generator" onClick={showNavBar} className="text">
+                <a href="/#" onClick={showNavBar} className="text">
                     Contacto
                 </a>
                 <ThemeSwitch />

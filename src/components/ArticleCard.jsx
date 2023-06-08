@@ -3,7 +3,7 @@ import React from 'react'
 
 export const ArticleCard = ({ article }) => {
     return (
-        <Link href={`/articles/${article.slug}`} className="Article-card box-shadow">
+        <Link href={`/articles/${article.slug}`} className="Article-card Article-hover">
             <div className="Article-card-content">
                 <div className="Article-caegory">
                     <span className="text">{article.category}</span>

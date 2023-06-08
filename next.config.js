@@ -25,6 +25,12 @@ const nextConfig = {
                 port: '',
                 pathname: '/storage/projects/**',
             },
+            {
+                protocol: 'https',
+                hostname: 'api.cristiandeveloper.com',
+                port: '',
+                pathname: '/storage/posts/**',
+            },
         ],
     },
 }
