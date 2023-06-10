@@ -10,14 +10,14 @@ export const PostItem = ({ post }) => {
             </div>
             <div className="Post-item-content">
                 <span>{post.date}</span>
-                <h1 className="text">{post.title}</h1>
+                <h1 className="primary-color">{post.title}</h1>
                 <div
                     className="dangerously-html-text ellipsis-2-lines"
                     dangerouslySetInnerHTML={{ __html: post.abstract }}
                 ></div>
                 <footer>
                     <ul>
-                        <li>
+                        <li className="primary-color">
                             {' '}
                             <AiFillTag />
                             {post.category}

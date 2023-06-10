@@ -8,12 +8,19 @@ export const ProjectCard = ({ project }) => {
                 <Image src={BASE_API_URL + project.cover} fill={true} alt={project.title} />
             </div>
             <div className="card-content">
-                <h1 className="text">{project.title}</h1>
+                <h1 className="primary-color">{project.title}</h1>
                 <div
                     className="dangerously-html-text ellipsis-3-lines"
                     dangerouslySetInnerHTML={{ __html: project.abstract }}
                 ></div>
-                <button className="btn btn-secondary">Ver proyecto</button>
+                <div className="card-footer">
+                    <h4 className="primary-color">Stack</h4>
+                    <ul>
+                        {project.technologies.map((item, idx) => (
+                            <li key={idx}>{item}</li>
+                        ))}
+                    </ul>
+                </div>
             </div>
         </article>
     )

@@ -7,7 +7,7 @@ export const Articles = async () => {
     const articles = data.slice(0, 6)
     return (
         <section className="Articles-container container">
-            <h2>Últimos artículos</h2>
+            <h2 className="primary-color">Últimos artículos</h2>
             <div className="Articles-cards-container">
                 {articles.map((article) => (
                     <ArticleCard key={article.id} article={article} />

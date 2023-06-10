@@ -27,7 +27,6 @@ header {
                 margin-right: 1rem;
             }
             span {
-                color: $primary-color;
                 font-weight: 800;
             }
             @include tablet {
@@ -65,12 +64,10 @@ header {
             transition: none;
         }
         a {
-            margin: 0 1.6rem;
             font-weight: 600;
-
-            &.text:hover {
-                color: $primary-color;
-            }
+            transition: all 0.6s ease;
+            padding: 0.8rem 1.6rem;
+            border-radius: 0.8rem;
         }
 
         .nav_close_btn {

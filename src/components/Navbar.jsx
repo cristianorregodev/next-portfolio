@@ -16,21 +16,21 @@ export const Navbar = () => {
             <Link href="/" className="logo">
                 <h2 className="text">
                     <Image src={'/images/p.svg'} width={40} height={40} alt="logo" />
-                    co<span>dev</span>
+                    co<span className="primary-color">dev</span>
                 </h2>
             </Link>
 
             <nav ref={navRef} className="background">
-                <Link href="/#about" onClick={showNavBar} className="text">
+                <Link href="/#about" onClick={showNavBar} className="text nav-link-hover">
                     Sobre mí
                 </Link>
-                <Link href="/projects" onClick={showNavBar} className="text">
+                <Link href="/projects" onClick={showNavBar} className="text nav-link-hover">
                     Proyectos
                 </Link>
-                <Link href="/articles" onClick={showNavBar} className="text">
+                <Link href="/articles" onClick={showNavBar} className="text nav-link-hover">
                     Artículos
                 </Link>
-                <a href="/#" onClick={showNavBar} className="text">
+                <a href="/#" onClick={showNavBar} className="text nav-link-hover">
                     Contacto
                 </a>
                 <ThemeSwitch />

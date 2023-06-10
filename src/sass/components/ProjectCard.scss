@@ -1,7 +1,7 @@
 article.Project-card {
     max-width: 36rem;
     width: 100%;
-    border-radius: 0.8rem;
+    border-radius: 1.2rem;
     overflow: hidden;
     margin-top: 2rem;
     .Project-card-image {
@@ -24,6 +24,18 @@ article.Project-card {
 
         h1 {
             font-size: 2rem;
+        }
+        .card-footer {
+            h4 {
+                margin: 0;
+            }
+            ul {
+                margin-top: 1rem;
+                display: flex;
+                column-gap: 1rem;
+                flex-wrap: wrap;
+                list-style: inside;
+            }
         }
         button {
             margin-top: 1rem;

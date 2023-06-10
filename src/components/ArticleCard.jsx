@@ -8,14 +8,13 @@ export const ArticleCard = ({ article }) => {
                 <div className="Article-caegory">
                     <span className="text">{article.category}</span>
                 </div>
-                <h1 className="text">{article.title}</h1>
+                <h1 className="primary-color">{article.title}</h1>
                 <h4
                     className="dangerously-html-text ellipsis-2-lines"
                     dangerouslySetInnerHTML={{ __html: article.abstract }}
                 ></h4>
                 <div className="Article-author">
-                    <span>{article.date}</span>
-                    <span>By {article.author}</span>
+                    <span className="secondary-color">{article.date}</span>
                 </div>
             </div>
         </Link>

@@ -1,11 +1,35 @@
 //Font
 $font: 'Montserrat', sans-serif;
-$light: #dfe8e8;
+$light: #e9eeee;
 $dark: #171b1c;
 $darkness: #001114;
-$primary-color: #007d99;
+$primary-500: #007d99;
 $gray: #3b4345;
 $white: #fbfefe;
+
+//SCSS DARK THEME PRIMARY COLORS
+$primary-100: #007d99;
+$primary-200: #398ba4;
+$primary-300: #5799af;
+$primary-400: #71a7ba;
+$primary-500: #89b5c5;
+$primary-600: #a1c4d1;
+
+// SCSS DARK THEME SURFACE COLORS
+$surface-100: #171b1c;
+$surface-200: #2c3031;
+$surface-300: #434647;
+$surface-400: #5b5e5f;
+$surface-500: #747777;
+$surface-600: #8e9091;
+
+//SCSS DARK THEME MIXED SURFACE COLORS
+$surface-mixed-100: #1a2427;
+$surface-mixed-200: #2f383b;
+$surface-mixed-300: #464e51;
+$surface-mixed-400: #5e6567;
+$surface-mixed-500: #767d7f;
+$surface-mixed-600: #909597;
 
 //Media Queries
 $phone: 380px;
