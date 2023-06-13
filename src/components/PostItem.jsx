@@ -1,10 +1,11 @@
 import { BASE_API_URL } from '@/config'
 import Image from 'next/image'
+import Link from 'next/link'
 import { AiFillTag } from 'react-icons/ai'
 
 export const PostItem = ({ post }) => {
     return (
-        <article className="Post-item Article-hover">
+        <Link href={`/articles/${post.slug}`} className="Post-item Article-hover">
             <div className="Post-item-image">
                 <Image src={BASE_API_URL + post.cover} alt="Alt" fill={true} />
             </div>
@@ -25,6 +26,6 @@ export const PostItem = ({ post }) => {
                     </ul>
                 </footer>
             </div>
-        </article>
+        </Link>
     )
 }

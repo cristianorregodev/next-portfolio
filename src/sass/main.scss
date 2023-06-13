@@ -12,6 +12,7 @@
 @import 'components/ArticleCard';
 @import 'components/Banner';
 @import 'components/PostItem';
+@import 'components/Footer';
 
 //Placeholders
 @import 'components/placeholders/PostItemPlaceHolder';
@@ -21,5 +22,6 @@
 @import 'containers/About';
 @import 'containers/Projects';
 @import 'containers/Articles';
-@import 'containers/Articles/Banner';
+@import 'containers/Articles/Page';
 @import 'containers/Articles/ListOfPosts';
+@import 'containers/Projects/ListOfProjects';

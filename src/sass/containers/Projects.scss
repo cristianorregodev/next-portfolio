@@ -4,13 +4,9 @@ section.Projects-container {
         padding: 6rem 0;
     }
 
-    h2 {
-        font-size: 2rem;
-        text-transform: uppercase;
-        text-align: center;
-    }
     p {
         font-size: 1.6rem;
+        margin-top: 4rem;
     }
     .Projects-cards-container {
         width: 100%;
@@ -18,10 +14,11 @@ section.Projects-container {
         place-content: center;
         @include tablet-alt {
             height: 80%;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 2.4rem;
         }
     }
-    a {
+    a.Projects-all {
         display: flex;
         justify-content: center;
         align-items: center;

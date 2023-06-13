@@ -3,11 +3,6 @@ section.Articles-container {
     @include tablet-alt {
         padding: 6rem 0;
     }
-    h2 {
-        font-size: 2rem;
-        text-transform: uppercase;
-        text-align: center;
-    }
     .Articles-cards-container {
         width: 100%;
         display: grid;

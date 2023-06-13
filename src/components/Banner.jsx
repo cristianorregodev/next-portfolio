@@ -1,26 +1,31 @@
 import { AiOutlineTag, AiOutlineUser, AiOutlineCalendar } from 'react-icons/ai'
 
 export const Banner = ({
-    title = 'Lorem ipsum noe truwen am',
-    author = 'Cristian Orrego',
-    date = 'hace 8 días',
-    category = 'Programación',
+    title = 'Próximamente',
+    author = '',
+    date = '',
+    category = '',
+    image = '/banner-two.svg',
+    description = '',
 }) => {
     return (
-        <section className="Banner-container">
+        <section className="Banner-container" style={{ backgroundImage: `url(${image})` }}>
             <div className="Banner-content container">
                 <h1>{title}</h1>
-                <ul>
-                    <li>
-                        <AiOutlineUser /> {author}
-                    </li>
-                    <li>
-                        <AiOutlineTag /> {category}
-                    </li>
-                    <li>
-                        <AiOutlineCalendar /> {date}
-                    </li>
-                </ul>
+                {author && (
+                    <ul>
+                        <li>
+                            <AiOutlineUser /> {author}
+                        </li>
+                        <li>
+                            <AiOutlineTag /> {category}
+                        </li>
+                        <li>
+                            <AiOutlineCalendar /> {date}
+                        </li>
+                    </ul>
+                )}
+                {description && <p>{description}</p>}
             </div>
         </section>
     )

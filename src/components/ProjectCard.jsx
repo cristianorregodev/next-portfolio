@@ -1,9 +1,10 @@
 import Image from 'next/image'
 import { BASE_API_URL } from '@/config'
+import Link from 'next/link'
 
 export const ProjectCard = ({ project }) => {
     return (
-        <article className="Project-card background box-shadow">
+        <Link href={`/projects/${project.slug}`} className="Project-card background box-shadow">
             <div className="Project-card-image">
                 <Image src={BASE_API_URL + project.cover} fill={true} alt={project.title} />
             </div>
@@ -20,8 +21,11 @@ export const ProjectCard = ({ project }) => {
                             <li key={idx}>{item}</li>
                         ))}
                     </ul>
+                    <h3 className="primary-color">
+                        Categoria: <p className="text">{project.category}</p>
+                    </h3>
                 </div>
             </div>
-        </article>
+        </Link>
     )
 }

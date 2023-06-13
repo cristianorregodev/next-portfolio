@@ -30,7 +30,7 @@ body {
         background: $dark;
     }
     .text {
-        color: $white;
+        color: $light;
     }
     .btn-primary {
         background: $primary-300;
@@ -70,8 +70,12 @@ body {
     }
     .dangerously-html-text {
         p {
-            color: $white;
+            color: $light;
             margin: 0;
+        }
+        h2 {
+            color: $primary-200;
+            margin: 1.4rem 0;
         }
     }
     .primary-color {
@@ -85,6 +89,9 @@ body {
             background: $surface-200;
         }
     }
+    li {
+        color: $light;
+    }
 }
 .light {
     background: $light;
@@ -92,7 +99,7 @@ body {
         background: $light;
     }
     .text {
-        color: $dark;
+        color: $surface-400;
     }
     .btn-primary {
         background: $surface-300;
@@ -132,8 +139,12 @@ body {
     }
     .dangerously-html-text {
         p {
-            color: $dark;
+            color: $surface-400;
             margin: 0;
+        }
+        h2 {
+            color: $primary-100;
+            margin: 1.4rem 0;
         }
     }
     .primary-color {
@@ -147,8 +158,15 @@ body {
             background: rgba(193, 200, 206, 0.788);
         }
     }
+    li {
+        color: $surface-400;
+    }
 }
+.section-title {
+    font-size: 3.4rem;
 
+    text-align: left;
+}
 .btn {
     padding: 1rem 2rem;
     border: none;
@@ -161,9 +179,9 @@ body {
 }
 p {
     font-size: 1.4rem;
-    font-weight: 100;
+    font-weight: 400;
     text-align: justify;
-    color: $surface-600;
+    color: $surface-400;
     margin: 1rem 0 1.5rem 0;
 }
 

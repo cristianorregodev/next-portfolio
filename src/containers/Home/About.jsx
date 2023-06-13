@@ -4,8 +4,15 @@ import React from 'react'
 export const About = () => {
     return (
         <section className="About-container container" id="about">
-            <h2 className="primary-color">Sobre mí</h2>
+            <h2 className="primary-color section-title">Sobre mí</h2>
             <div className="About-content">
+                <div>
+                    <Image
+                        src={'/images/cristian_orrego.webp'}
+                        fill={true}
+                        alt={'Programador de frente con espacio de trabajo de fondo'}
+                    />
+                </div>
                 <article>
                     {/* <span className="text">Hola,</span>
                     <h1 className="text">Mi nombre es Cristian Orrego y soy desarrollador web full stack.</h1> */}
@@ -30,13 +37,6 @@ export const About = () => {
                         </li>
                     </ul>
                 </article>
-                <div>
-                    <Image
-                        src={'/images/cristian_orrego.webp'}
-                        fill={true}
-                        alt={'Programador de frente con espacio de trabajo de fondo'}
-                    />
-                </div>
             </div>
         </section>
     )

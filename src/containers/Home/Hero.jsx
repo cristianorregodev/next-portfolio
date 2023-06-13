@@ -7,21 +7,21 @@ export default function Hero() {
     return (
         <section className="Hero-container container">
             <div className="Hero-content">
-                <h1 className="text">Cristian Orrego</h1>
+                <h1 className="primary-color">Cristian Orrego</h1>
                 <span className="text">Fullstack developer</span>
                 <p className="text">
-                    Bienvenido a mi sitio web, te invito a que conozcas un poco sobre mí, veas mis
-                    proyectos o leas mi blog.
+                    Bienvenido a mi sitio web, te invito a que conozcas un poco sobre mí, veas mis proyectos o leas mi
+                    blog.
                 </p>
                 <div className="Stack">
                     <div className="Stack-slide-track">
                         {Stack.map((item) => (
-                            <div key={item.id} className="Stack-slide text">
+                            <div key={item.id} className="Stack-slide">
                                 {item.element}
                             </div>
                         ))}
                         {Stack.map((item) => (
-                            <div key={item.id} className="Stack-slide text">
+                            <div key={item.id} className="Stack-slide">
                                 {item.element}
                             </div>
                         ))}

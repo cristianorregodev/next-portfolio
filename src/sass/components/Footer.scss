@@ -1,0 +1,20 @@
+footer.Main-footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10rem;
+    box-shadow: 0px -10px 7px -4px rgba(0, 0, 0, 0.007);
+    ul {
+        display: flex;
+        column-gap: 2rem;
+        a {
+            color: $primary-100;
+            font-weight: 600;
+            animation: all 0.5s ease;
+            &:hover {
+                color: $primary-200;
+            }
+        }
+    }
+}

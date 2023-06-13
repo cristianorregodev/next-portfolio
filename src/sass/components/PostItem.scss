@@ -1,4 +1,4 @@
-article.Post-item {
+a.Post-item {
     margin-top: 2rem;
     display: grid;
     grid-template-columns: 2fr 5fr;
@@ -22,6 +22,10 @@ article.Post-item {
         }
     }
     .Post-item-content {
+        span {
+            font-size: 1.4rem;
+            color: $surface-600;
+        }
         h1 {
             font-size: 1.8rem;
             @include tablet-alt {

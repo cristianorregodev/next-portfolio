@@ -1,0 +1,9 @@
+section.List-of-projects {
+    padding: 5rem 0;
+    display: grid;
+    place-items: center;
+    @include tablet-alt {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2.4rem;
+    }
+}

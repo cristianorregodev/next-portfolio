@@ -7,7 +7,6 @@ import Image from 'next/image'
 
 export const Navbar = () => {
     const navRef = useRef()
-
     const showNavBar = () => {
         navRef.current.classList.toggle('responsive_nav')
     }
@@ -21,6 +20,9 @@ export const Navbar = () => {
             </Link>
 
             <nav ref={navRef} className="background">
+                <Link href="/" onClick={showNavBar} className="text nav-link-hover">
+                    Inicio
+                </Link>
                 <Link href="/#about" onClick={showNavBar} className="text nav-link-hover">
                     Sobre mí
                 </Link>
@@ -30,9 +32,7 @@ export const Navbar = () => {
                 <Link href="/articles" onClick={showNavBar} className="text nav-link-hover">
                     Artículos
                 </Link>
-                <a href="/#" onClick={showNavBar} className="text nav-link-hover">
-                    Contacto
-                </a>
+
                 <ThemeSwitch />
 
                 <button className="nav_close_btn text" onClick={showNavBar}>

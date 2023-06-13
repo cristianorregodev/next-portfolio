@@ -2,8 +2,8 @@ section.Banner-container {
     width: 100%;
     height: 30rem;
     position: relative;
-    background-image: url('/banner-two.svg');
-    background-position: top;
+    //background-image: url('/banner-two.svg');
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     div.Banner-content {
@@ -14,10 +14,13 @@ section.Banner-container {
         h1 {
             font-size: 3.2rem;
             color: $white;
+            @include tablet-alt {
+                max-width: 80%;
+            }
         }
         ul {
-            color: rgb(185, 185, 185);
             li {
+                color: $light;
                 display: flex;
                 align-items: center;
                 column-gap: 0.6rem;
@@ -27,6 +30,10 @@ section.Banner-container {
                 gap: 1rem;
                 margin-top: 2rem;
             }
+        }
+        p {
+            color: $light;
+            font-size: 1.8rem;
         }
     }
 }
