@@ -3,7 +3,7 @@ import Script from 'next/script'
 import { Banner } from '@/components/Banner'
 import { API_URL, BASE_API_URL } from '@/config'
 import { getData } from '@/helpers/getData'
-import '@/helpers/prism.css'
+import '../../../helpers/prism.css'
 
 export default async function ArticlePage({ params }) {
     const { slug } = params

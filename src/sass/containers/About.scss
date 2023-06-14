@@ -41,7 +41,10 @@ section.About-container {
             overflow: hidden;
             max-width: 56rem;
             width: 100%;
-            height: 28rem;
+            height: 22rem;
+            @include tablet {
+                height: 28rem;
+            }
             margin: 0 auto;
             @include tablet-alt {
                 height: 33rem;
