@@ -29,7 +29,7 @@ export default async function ProjectPage({ params }) {
                         <AiOutlineCodeSandbox />
                         <ul>
                             {data.technologies.map((item, idx) => (
-                                <li key={idx}>{item}</li>
+                                <li key={idx}>{item + ','}</li>
                             ))}
                         </ul>
                     </li>

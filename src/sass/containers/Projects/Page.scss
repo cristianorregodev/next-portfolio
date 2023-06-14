@@ -10,6 +10,14 @@ section.Project-main-container {
         }
     }
     padding: 1rem 0 5rem;
+    a {
+        font-weight: bold;
+        color: $primary-100;
+        transition: all 0.5s ease;
+        &:hover {
+            color: $primary-300;
+        }
+    }
     .Project-main-image {
         margin: 0 auto;
         width: 100%;
@@ -53,6 +61,7 @@ section.Project-main-container {
         }
         li {
             color: $primary-100;
+            font-weight: bold;
             display: flex;
             align-items: center;
             column-gap: 0.5rem;

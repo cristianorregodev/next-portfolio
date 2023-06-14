@@ -8,6 +8,14 @@ section.Article-main-container {
         }
     }
     padding: 5rem 0;
+    a {
+        font-weight: bold;
+        color: $primary-100;
+        transition: all 0.5s ease;
+        &:hover {
+            color: $primary-300;
+        }
+    }
     .Article-main-image {
         margin: 3rem auto;
         width: 100%;
