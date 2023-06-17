@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import { AiOutlineFileProtect } from 'react-icons/ai'
 import '@/sass/containers/About.scss'
 
 export const About = () => {
@@ -7,7 +8,7 @@ export const About = () => {
         <section className="About-container container" id="about">
             <h2 className="primary-color section-title">Sobre mí</h2>
             <div className="About-content">
-                <div>
+                <div className="About-image">
                     <Image
                         src={'/images/cristian_orrego.webp'}
                         fill={true}
@@ -38,6 +39,14 @@ export const About = () => {
                         </li>
                     </ul>
                 </article>
+            </div>
+            <div className="Btn-cv">
+                <a
+                    href="https://docs.google.com/document/d/1qroZkOm9Bxvuf5LKPC12N-yTHao0oP0hR7HS_8qyZas/edit?usp=sharing"
+                    target="_blank"
+                >
+                    Curriculum <AiOutlineFileProtect />
+                </a>
             </div>
         </section>
     )
