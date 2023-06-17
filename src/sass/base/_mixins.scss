@@ -1,3 +1,4 @@
+@import './variables';
 @mixin telefono {
     @media (min-width: $phone) {
         @content;

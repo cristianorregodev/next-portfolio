@@ -1,6 +1,7 @@
 import { ArticleCard } from '@/components/ArticleCard'
 import { getData } from '@/helpers/getData'
 import { API_URL } from '@/config'
+import '@/sass/containers/Articles.scss'
 
 export const Articles = async () => {
     const { data } = await getData(`${API_URL}/posts`)

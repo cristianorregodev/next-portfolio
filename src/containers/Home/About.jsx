@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import '@/sass/containers/About.scss'
 
 export const About = () => {
     return (

@@ -1,3 +1,5 @@
+@import '../../base/mixins';
+
 section.Project-main-container {
     display: grid;
     gap: 3rem;
@@ -41,13 +43,14 @@ section.Project-main-container {
         place-self: center;
     }
     p {
-        font-size: 1.7rem;
-        line-height: 2.4rem;
+        font-size: 1.8rem;
+        line-height: 2.6rem;
     }
     ul {
         line-height: 2.4rem;
         list-style: inside;
         text-align: justify;
+        font-size: 1.8rem;
         margin: 2rem 0;
     }
     ul.Project-info {

@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { Stack } from '../../helpers/stack-data'
+import '@/sass/containers/Hero.scss'
 
 export default function Hero() {
     return (

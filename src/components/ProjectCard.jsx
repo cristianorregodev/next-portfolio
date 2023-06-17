@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { BASE_API_URL } from '@/config'
 import Link from 'next/link'
+import '@/sass/components/ProjectCard.scss'
 
 export const ProjectCard = ({ project }) => {
     return (

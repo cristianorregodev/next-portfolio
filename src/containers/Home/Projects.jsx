@@ -2,6 +2,8 @@ import { BiArrowToRight } from 'react-icons/bi'
 import { ProjectCard } from '@/components/ProjectCard'
 import { API_URL } from '@/config'
 import { getData } from '@/helpers/getData'
+import '@/sass/containers/Projects.scss'
+import Link from 'next/link'
 
 export const Projects = async () => {
     const { data } = await getData(`${API_URL}/projects`)
@@ -20,9 +22,9 @@ export const Projects = async () => {
                     <ProjectCard key={project.id} project={project} />
                 ))}
             </div>
-            <a href="#" className=" primary-color hover Projects-all">
+            <Link href="/projects" className=" primary-color hover Projects-all">
                 Todos los proyectos <BiArrowToRight />
-            </a>
+            </Link>
         </section>
     )
 }

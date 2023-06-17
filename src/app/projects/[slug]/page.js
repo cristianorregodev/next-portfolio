@@ -3,6 +3,7 @@ import { Banner } from '@/components/Banner'
 import { API_URL, BASE_API_URL } from '@/config'
 import { getData } from '@/helpers/getData'
 import Image from 'next/image'
+import '@/sass/containers/Projects/Page.scss'
 
 export default async function ProjectPage({ params }) {
     const { slug } = params

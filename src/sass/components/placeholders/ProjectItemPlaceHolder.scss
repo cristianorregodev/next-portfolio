@@ -1,0 +1,82 @@
+@import '../../base/mixins';
+div.Project-item-placeholder {
+    min-height: 39rem;
+    border-radius: 1.2rem;
+    max-width: 36rem;
+    @include tablet-alt {
+        max-width: 100%;
+    }
+    width: 100%;
+    overflow: hidden;
+    .Image-project-placeholder {
+        background: rgb(204, 204, 204);
+        background: linear-gradient(90deg, rgba(204, 204, 204, 0.692) 0%, rgba(145, 146, 146, 0.785) 100%);
+        background-size: 300% 100%;
+        animation: gradient 3s ease infinite;
+        width: 100%;
+        height: 17.5rem;
+    }
+    .Content-project-placeholder {
+        width: 100%;
+        height: 17.5rem;
+        padding: 2rem;
+        .Title-project-placeholder {
+            background: rgb(204, 204, 204);
+            background: linear-gradient(90deg, rgba(204, 204, 204, 0.692) 0%, rgba(145, 146, 146, 0.785) 100%);
+            background-size: 300% 100%;
+            animation: gradient 3s ease infinite;
+            width: 70%;
+            height: 2.4rem;
+            border-radius: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .Abstract-project-placeholder {
+            background: rgb(204, 204, 204);
+            background: linear-gradient(90deg, rgba(204, 204, 204, 0.692) 0%, rgba(145, 146, 146, 0.785) 100%);
+            background-size: 300% 100%;
+            animation: gradient 3s ease infinite;
+            width: 100%;
+            height: 1.6rem;
+            border-radius: 1.2rem;
+            margin-top: 1rem;
+        }
+        .Subtitle-project-placeholder {
+            background: rgb(204, 204, 204);
+            background: linear-gradient(90deg, rgba(204, 204, 204, 0.692) 0%, rgba(145, 146, 146, 0.785) 100%);
+            background-size: 300% 100%;
+            animation: gradient 3s ease infinite;
+            width: 50%;
+            height: 2.4rem;
+            border-radius: 1.2rem;
+            margin-top: 2rem;
+        }
+        .List-project-placeholder {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            width: 100%;
+            gap: 2rem;
+            div {
+                margin-top: 1rem;
+                width: 100%;
+                height: 1.8rem;
+                background: rgb(204, 204, 204);
+                background: linear-gradient(90deg, rgba(204, 204, 204, 0.692) 0%, rgba(145, 146, 146, 0.785) 100%);
+                background-size: 300% 100%;
+                animation: gradient 3s ease infinite;
+                border-radius: 1.2rem;
+            }
+        }
+    }
+
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+}

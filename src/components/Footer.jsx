@@ -1,3 +1,4 @@
+import '@/sass/components/Footer.scss'
 export const Footer = () => {
     return (
         <footer className="Main-footer">

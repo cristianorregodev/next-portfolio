@@ -1,5 +1,5 @@
 import { AiOutlineTag, AiOutlineUser, AiOutlineCalendar } from 'react-icons/ai'
-
+import '@/sass/components/Banner.scss'
 export const Banner = ({
     title = 'Próximamente',
     author = '',

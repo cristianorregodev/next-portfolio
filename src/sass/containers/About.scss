@@ -1,3 +1,4 @@
+@import '../base/mixins.scss';
 section.About-container {
     padding: 4rem 0;
     @include tablet-alt {
@@ -31,6 +32,7 @@ section.About-container {
                 padding-left: 2rem;
                 li {
                     margin-top: 1rem;
+                    font-size: 1.8rem;
                 }
                 margin-bottom: 2rem;
             }

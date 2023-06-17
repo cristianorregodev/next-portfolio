@@ -2,6 +2,7 @@ import { BASE_API_URL } from '@/config'
 import Image from 'next/image'
 import Link from 'next/link'
 import { AiFillTag } from 'react-icons/ai'
+import '@/sass/components/PostItem.scss'
 
 export const PostItem = ({ post }) => {
     return (

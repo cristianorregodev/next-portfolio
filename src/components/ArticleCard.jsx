@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
+import '@/sass/components/ArticleCard.scss'
 
 export const ArticleCard = ({ article }) => {
     return (

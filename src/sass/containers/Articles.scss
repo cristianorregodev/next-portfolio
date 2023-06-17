@@ -1,3 +1,4 @@
+@import '../base/mixins';
 section.Articles-container {
     padding: 4rem 0;
     @include tablet-alt {

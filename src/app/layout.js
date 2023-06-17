@@ -1,3 +1,4 @@
+import '@/sass/main.scss'
 import { Navbar } from '@/components/Navbar'
 import { Providers } from './Providers'
 import { Footer } from '@/components/Footer'
