@@ -11,7 +11,7 @@ export default function Hero() {
                 <h1 className="primary-color">Cristian Orrego</h1>
                 <span className="text">Fullstack developer</span>
                 <p className="text">
-                    Bienvenido a mi sitio web, aquí encontrarás información sobre mi trabajo, experiencia en desarrollo
+                    Bienvenido a mi sitio web, donde podrás echar un vistazo a mi trabajo, experiencia en desarrollo web
                     y algunos artículos sobre programación.
                 </p>
                 <div className="Stack">
