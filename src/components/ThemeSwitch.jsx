@@ -103,9 +103,19 @@ export const ThemeSwitch = () => {
                 <option value="light">Light</option>
             </select> */}
             {currentTheme === 'dark' ? (
-                <IoMdSunny size={24} className="Sun-icon" onClick={() => setTheme('light')} />
+                <IoMdSunny
+                    size={24}
+                    style={{ color: '#007d99' }}
+                    className="Sun-icon"
+                    onClick={() => setTheme('light')}
+                />
             ) : (
-                <IoMdMoon size={24} className="Moon-icon" onClick={() => setTheme('dark')} />
+                <IoMdMoon
+                    size={24}
+                    style={{ color: '#007d99' }}
+                    className="Moon-icon"
+                    onClick={() => setTheme('dark')}
+                />
             )}
         </>
     )

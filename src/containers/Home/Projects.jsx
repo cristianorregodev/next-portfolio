@@ -22,9 +22,11 @@ export const Projects = async () => {
                     <ProjectCard key={project.id} project={project} />
                 ))}
             </div>
-            <Link href="/projects" className=" primary-color hover Projects-all">
-                Todos los proyectos <BiArrowToRight />
-            </Link>
+            <div className="Projects-all">
+                <Link href="/projects">
+                    Todos los proyectos <BiArrowToRight />
+                </Link>
+            </div>
         </section>
     )
 }

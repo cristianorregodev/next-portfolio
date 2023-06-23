@@ -8,7 +8,13 @@ export const PostItem = ({ post }) => {
     return (
         <Link href={`/articles/${post.slug}`} className="Post-item Article-hover">
             <div className="Post-item-image">
-                <Image src={BASE_API_URL + post.cover} alt="Alt" fill={true} />
+                <Image
+                    src={BASE_API_URL + post.cover}
+                    alt="Alt"
+                    fill={true}
+                    loading="lazy"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
             </div>
             <div className="Post-item-content">
                 <span>{post.date}</span>

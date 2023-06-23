@@ -7,7 +7,13 @@ export const ProjectCard = ({ project }) => {
     return (
         <Link href={`/projects/${project.slug}`} className="Project-card background box-shadow">
             <div className="Project-card-image">
-                <Image src={BASE_API_URL + project.cover} fill={true} alt={project.title} />
+                <Image
+                    src={BASE_API_URL + project.cover}
+                    fill={true}
+                    alt={project.title}
+                    loading="lazy"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
             </div>
             <div className="card-content">
                 <h1 className="primary-color">{project.title}</h1>

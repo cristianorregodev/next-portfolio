@@ -1,5 +1,8 @@
 //Font
-$font: 'Montserrat', sans-serif;
+small {
+    font-family: Arial, Helvetica, sans-serif;
+}
+$font: Arial, Helvetica, sans-serif;
 $light: #e9eeee;
 $dark: #171b1c;
 $darkness: #001114;

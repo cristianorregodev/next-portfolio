@@ -33,6 +33,11 @@ section.About-container {
                 li {
                     margin-top: 1rem;
                     font-size: 1.8rem;
+                    span {
+                        color: $primary-100;
+                        font-weight: bold;
+                        font-size: 1.8rem;
+                    }
                 }
                 margin-bottom: 2rem;
             }
@@ -60,7 +65,7 @@ section.About-container {
         justify-content: center;
         align-items: center;
         a {
-            color: $primary-100;
+            color: $primary-200;
             font-weight: bold;
             font-size: 1.8rem;
             transition: all 0.5s ease;
@@ -68,9 +73,31 @@ section.About-container {
             justify-content: center;
             align-items: center;
             column-gap: 1rem;
+            position: relative;
+            transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+            transition-duration: 400ms;
+            transition-property: color;
+            &:focus,
             &:hover {
-                transform: scale(1.05);
-                text-decoration: underline;
+                color: $primary-100;
+            }
+            &:focus:after,
+            &:hover:after {
+                width: 100%;
+                left: 0%;
+            }
+            &::after {
+                content: '';
+                pointer-events: none;
+                bottom: -4px;
+                left: 50%;
+                position: absolute;
+                width: 0%;
+                height: 2px;
+                background-color: $primary-100;
+                transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+                transition-duration: 400ms;
+                transition-property: width, left;
             }
         }
     }

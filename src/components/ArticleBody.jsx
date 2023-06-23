@@ -23,7 +23,13 @@ export const ArticleBody = ({ data }) => {
             <div className="dangerously-html-text" dangerouslySetInnerHTML={{ __html: data.abstract }}></div>
             <div className="dangerously-html-text" dangerouslySetInnerHTML={{ __html: data.main_content }}></div>
             <div className="Article-main-image box-shadow">
-                <Image src={BASE_API_URL + data.image} alt={data.title} fill={true} />
+                <Image
+                    src={BASE_API_URL + data.image}
+                    alt={data.title}
+                    fill={true}
+                    loading="lazy"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
             </div>
             <div className="dangerously-html-text" dangerouslySetInnerHTML={{ __html: data.second_content }}></div>
         </section>

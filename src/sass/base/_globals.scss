@@ -37,7 +37,23 @@ body {
         color: $white;
         transition: all 0.4s ease;
         &:hover {
-            background: $surface-300;
+            &::before {
+                width: 100%;
+            }
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 0;
+            border-radius: 1.2rem;
+            background-color: $surface-300;
+            z-index: -1;
+            -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+            box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+            transition: all 250ms;
         }
     }
     .btn-secondary {
@@ -45,7 +61,23 @@ body {
         color: $white;
         transition: all 0.4s ease;
         &:hover {
-            background: $primary-300;
+            &::before {
+                width: 100%;
+            }
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 0;
+            border-radius: 1.2rem;
+            background-color: $primary-300;
+            z-index: -1;
+            -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+            box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+            transition: all 250ms;
         }
     }
 
@@ -99,14 +131,30 @@ body {
         background: $light;
     }
     .text {
-        color: $surface-400;
+        color: $surface-500;
     }
     .btn-primary {
         background: $surface-300;
         color: $white;
         transition: all 0.4s ease;
         &:hover {
-            background: $primary-100;
+            &::before {
+                width: 100%;
+            }
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 0;
+            border-radius: 1.2rem;
+            background-color: $primary-100;
+            z-index: -1;
+            -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+            box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+            transition: all 250ms;
         }
     }
     .btn-secondary {
@@ -114,7 +162,23 @@ body {
         background: $primary-100;
         transition: all 0.4s ease;
         &:hover {
-            background: $surface-300;
+            &::before {
+                width: 100%;
+            }
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 0;
+            border-radius: 1.2rem;
+            background-color: $surface-300;
+            z-index: -1;
+            -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+            box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+            transition: all 250ms;
         }
     }
 
@@ -159,7 +223,7 @@ body {
         }
     }
     li {
-        color: $surface-400;
+        color: $surface-500;
     }
 }
 .section-title {
@@ -176,6 +240,10 @@ body {
     font-family: $font;
     font-size: 1.6rem;
     font-weight: 600;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 250ms;
 }
 p {
     font-size: 1.4rem;

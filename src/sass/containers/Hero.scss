@@ -16,6 +16,9 @@ section.Hero-container {
         h1 {
             font-size: 4rem;
             margin-top: 3rem;
+            @include tablet-alt {
+                font-size: 5.4rem;
+            }
         }
         span {
             font-size: 2rem;

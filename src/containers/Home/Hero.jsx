@@ -38,7 +38,13 @@ export default function Hero() {
                 </div>
             </div>
             <div className="Hero-image">
-                <Image src="/images/picture.png" alt="Programador con buzo" fill={true} />
+                <Image
+                    src="/images/picture.png"
+                    alt="Programador con buzo"
+                    fill={true}
+                    loading="lazy"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
             </div>
         </section>
     )

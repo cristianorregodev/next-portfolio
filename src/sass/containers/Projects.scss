@@ -22,18 +22,47 @@ section.Projects-container {
             font-size: 1.6rem;
         }
     }
-    a.Projects-all {
+    div.Projects-all {
         display: flex;
+        margin-top: 3rem;
+        width: 100%;
         justify-content: center;
         align-items: center;
-        column-gap: 0.6rem;
-        font-weight: bold;
-        transition: all 1s ease;
-        font-size: 1.8rem;
-
-        margin-top: 3rem;
         @include tablet-alt {
             margin-top: 5rem;
+        }
+        a {
+            font-weight: bold;
+            transition: all 1s ease;
+            font-size: 1.8rem;
+            position: relative;
+            color: $primary-200;
+            transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+            transition-duration: 400ms;
+            transition-property: color;
+
+            &:focus,
+            &:hover {
+                color: $primary-100;
+            }
+            &:focus:after,
+            &:hover:after {
+                width: 100%;
+                left: 0%;
+            }
+            &::after {
+                content: '';
+                pointer-events: none;
+                bottom: -4px;
+                left: 50%;
+                position: absolute;
+                width: 0%;
+                height: 2px;
+                background-color: $primary-100;
+                transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+                transition-duration: 400ms;
+                transition-property: width, left;
+            }
         }
     }
 }
